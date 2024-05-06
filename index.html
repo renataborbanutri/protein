@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Protein Requirement Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="path_to_your_image.jpg" alt="Renata Borba Nutri" class="profile-pic">
+        <h1>Renata Borba Nutri - Protein Calculator</h1>
+    </header>
+    <h2>Daily Protein Requirement Calculator</h2>
+    <form id="proteinForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight"><br>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="activity">Physical Activity Level:</label>
+        <select id="activity" name="activity">
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+        </select><br>
+
+        <button type="button" onclick="calculateProtein()">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="protein_script.js"></script>
+</body>
+</html>
