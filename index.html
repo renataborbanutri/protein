@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Protein Requirement Calculator</title>
+    <title>Meta de proteína diária</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="rena.png" alt="Renata Borba Nutri" class="profile-pic">
-        <h1>Renata Borba Nutri - Protein Calculator</h1>
+        <h1>Renata Borba Nutri - Calculadora de Proteína</h1>
     </header>
-    <h2>Daily Protein Requirement Calculator</h2>
+    <h2>Meta de proteína diária</h2>
     <form id="proteinForm">
-        <label for="age">Age:</label>
+        <label for="age">Idade:</label>
         <input type="number" id="age" name="age"><br>
 
-        <label for="weight">Weight (kg):</label>
+        <label for="weight">Peso (kg):</label>
         <input type="number" id="weight" name="weight"><br>
 
-        <label for="sex">Sex:</label>
+        <label for="sex">Sexo:</label>
         <select id="sex" name="sex">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
         </select><br>
 
-        <label for="activity">Physical Activity Level:</label>
+        <label for="activity">Nível de atividade física:</label>
         <select id="activity" name="activity">
-            <option value="low">Low</option>
-            <option value="moderate">Moderate</option>
-            <option value="high">High</option>
+            <option value="low">Baixa</option>
+            <option value="moderate">Moderada</option>
+            <option value="high">Alta</option>
         </select><br>
 
-        <button type="button" onclick="calculateProtein()">Calculate</button>
+        <button type="button" onclick="calculateProtein()">Calcular</button>
     </form>
     <div id="result"></div>
 
