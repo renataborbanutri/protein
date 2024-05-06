@@ -26,7 +26,7 @@ function calculateBaseProtein(weight, activity, age, sex) {
 
     // Adjustments based on sex
     if (sex === 'female') {
-        proteinPerKg *= 1.57; // Assuming a slightly lower protein requirement for females
+        proteinPerKg *= 0.97; // Assuming a slightly lower protein requirement for females
     }
 
     return weight * proteinPerKg;
