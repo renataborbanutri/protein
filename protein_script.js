@@ -6,7 +6,7 @@ function calculateProtein() {
 
     var proteinIntake = calculateBaseProtein(weight, activity, age, sex);
 
-    document.getElementById('result').innerHTML = `Recommended daily protein intake: ${proteinIntake.toFixed(2)} grams.`;
+    document.getElementById('result').innerHTML = `Meta diária de proteína: ${proteinIntake.toFixed(0)}`;
 }
 
 function calculateBaseProtein(weight, activity, age, sex) {
