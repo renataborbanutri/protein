@@ -10,12 +10,12 @@ function calculateProtein() {
 }
 
 function calculateBaseProtein(weight, activity) {
-    var proteinPerKg = 0.8; // baseline for normal adults in grams per kg
+    var proteinPerKg = 1.4; // baseline for normal adults in grams per kg
 
     if (activity === 'moderate') {
-        proteinPerKg = 1.3;
+        proteinPerKg = 1.5;
     } else if (activity === 'high') {
-        proteinPerKg = 1.6;
+        proteinPerKg = 2;
     }
 
     return weight * proteinPerKg;
